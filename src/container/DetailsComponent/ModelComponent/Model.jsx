@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-
+import image from "../../../assets/img/model.jpg";
 export default class Model extends Component {
   render() {
-    let clone = { ...this.props.data };
-    console.log("clone: ", clone);
     return (
       <div className="position-relative">
-        <img src={this.props.image} alt="model" style={{ width: "20rem" }} />
+        <img src={image} alt="model" style={{ width: "20rem" }} />
       </div>
     );
   }
